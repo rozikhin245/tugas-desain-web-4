@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: white;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+        h2 {
+            color: rgb(0, 0, 0);
+            margin-bottom: 20px;
+            font-size: 26px;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        .gallery-container {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+            display: inline-block;
+            overflow: hidden;
+            max-width: 80%;
+        }
+        marquee {
+            padding: 10px 0;
+            max-width: 100%;
+        }
+        img {
+            width: 250px; 
+            height: auto; 
+            object-fit: cover;
+            margin: 10px;
+            border-radius: 15px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 3px solid rgba(255, 255, 255, 0.8); 
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        img:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.4);
+            border-color: #ff9800;
+        }
+    </style>
+</head>
+<body>
+    <h2>Gallery</h2>
+    <div class="gallery-container">
+        <marquee scrollamount="10" direction="left">
+            <img src="image/gambar 1.jpg" alt="Gambar 1">
+            <img src="image/gambar2.png" alt="Gambar 2">
+            <img src="image/gambar3.jpg" alt="Gambar 3">
+            <img src="image/gambar4.png" alt="Gambar 4">
+            <img src="image/gambar5.jpg" alt="Gambar 5">
+        </marquee>
+    </div>
+</body>
+</html>
